@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education-plataform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    
+    </head>
+        <body>
+            <section class="header">
+                <nav>
+                    <a href="index.html"><img src="/images/logo.png" alt="logo" class="logo"></a>
+
+                    <div class="nav-links" id="navLinks" ><!--Marcado pra JS-->
+
+                        <img class="cross" onclick="hideMenu()" src="/images/close.png" alt="cross">
+                        <ul>
+                            <li><a  href="">HOME</a></li>
+                            <li><a href="">SOBRE </a></li>
+                            <li><a href="">CURSOS</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">CONTATO</a></li>
+                        </ul>
+                    </div>
+                    <img class="hamb"  onclick="showMenu()"   src="/images/menu.png" alt="hamburguer menu"  >
+                </nav>
+                <div class="text-box">
+                    <h1>Cursos online acessíveis e oportunidades de aprendizado</h1>
+                    <p>Aprenda as melhores práticas da hotelaria <br> Profissionalize-se com o conteúdo exclusivo desenvolvido por experts na área.</p>
+                    <a href="" class="hero-btn">Procure agora</a>
+                </div>
+            </section>
+
+            <!--Javascript para alternar o estado do menu-->
+            <script>
+              
+                    var navLinks = document.getElementsById("navLinks");
+                    
+                    function showMenu(){
+                        navLinks.style.right = "0";
+                    }
+
+                    function hideMenu(){
+                        navLinks.style.right = "-210px";
+                    }
+
+
+            </script>
+
+        </body>
+</html>
